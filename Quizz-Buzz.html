@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Quizz-Buzz</title>
+</head>
+
+<body>
+    <!-- To create form we use form tag and action is used to link it to the server -->
+    <form action="">
+        <div id="all">
+        
+        <div id="head"><h1>Quizz-Buzz!</h1></div>
+        <hr>
+        <div id="description">
+        <p>Quizz-Buzz is the biggest quiz competition held all over India once in a year during 
+            Independence day. Participants from all over India of different 
+            educational institutions and of different age groups participate in the event. This
+             is initiative taken by Government of India to Inspire young minds 
+            out there. There are different areas available to choose. There will be three rounds
+             held for three days. Students will be competing with other students
+             of their age group only. There can be maximum of three members in a team. Let's go!!</p>
+        </div>
+
+        <br>
+
+        <div class="signup">
+        <h2>Sign Up to Quizz-Buzz Portal</h2>
+        <h5>* represents required sections</h5>
+
+        <!-- input tag takes input from user of different types ,say ,text ,email ,radio etc -->
+        <p>Name*: <br>
+            <input type="text" name="name"  placeholder="Enter full name in caps" required >
+        </p>
+        <p>Date Of Birth*: <br>
+            <input type="date" name="dob" id="dob" required >
+        </p>
+        <!-- Fieldset displays box around enclosed text -->
+        <fieldset>
+        <legend>Gender*: </legend>
+        <!-- radio helps to select only one among other tick boxes  -->
+        <p>Male<input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender" id="female"></p>
+        </fieldset>
+        <p>Father's Name*: <br>
+            <input type="text" name="father" id="father" placeholder="Enter full name in caps" required>
+        </p>
+        <p>Mother's Name*: <br><input type="text" name="mother" id="mother" placeholder="Enter full name in caps" required></p>
+        <!-- text area is large input area with adjustable rows and columns -->
+        <p>Institution*: <br><textarea name="clg" id="clgAdr" cols="30" rows="10" placeholder="Enter name of the institution along with address" required></textarea></p>
+        <p>E-mail Id*: <br><input type="email" name="email" id="email" placeholder="myname@gmail.com" required></p>
+        <p>Mobile Number*: <br><input type="number" name="mobNum" id="mobNum" required></p>
+        <p>Pincode: <br><input type="number" name="pincode" id="pincode"></p>
+        <p>Username*: <br><input type="text" name="uname" id="uname" placeholder="must include a number and a charecter" required></p>
+        <p>Create password*: <br> <input type="password" name="pass" id="pass" placeholder="create a strong password" required></p>
+        <p>Confirm password*: <br><input type="password" name="cpass" id="cpass" required></p>
+        <!-- 'value' is displayed inside the button -->
+        <p><input type="button" value="Sign Up" onclick="funcOne()">  <input type="reset" value="Reset"></p>
+        </div>
+
+        <br>
+
+        <div class="payment">
+        <h2>Payment Form</h2>
+        <h5>* represents required sections</h5>
+
+        <p>Card type*: <br>
+            <select name="card" id="card" required>
+                <option value="">--Select card type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Master Card</option>
+            </select>
+        </p>
+        <p>Expiration Date*: <br><input type="date" name="expdate" id="expiry" required></p>
+        <p>CVV*: <br><input type="password" name="cvv" id="cvv" required></p>
+        <p><input type="button" value="Pay Now!" onclick="functwo()">  <input type="button" value="Reset"></p>
+        </div>
+        
+
+        <br>
+
+        <div class="registration">
+        <h2>Registration Form for Quizz-Buzz 2022</h2>
+        <h5>* represents required sections</h5>
+
+        <p>Username*: <br><input type="text" name="uname" id="uname" required></p>
+        <p>Password*: <br><input type="password" name="pass" id="pass" required></p>
+        <p><a href="http://www.google.com"></a></p> <!--this is absolute url-->
+        <p>Topic for quiz*: <br>
+            <select name="quizTopic" id="quizTopic" required>
+                <option value="">--Select the topic for quiz--</option><!--this appears before dropping down the options-->
+                <option value="entertainment">Entertainment</option>
+                <option value="sports">Sports</option>
+                <option value="history">History</option>
+                <option value="space">Space</option>
+                <option value="math">Mathematics</option>
+                <option value="pureSciences">Pure Sciences</option>
+                <option value="finance">Finance</option>
+                <option value="lang">Language</option>
+                <option value="aptitude">Aptitude and logical reasoning</option>
+            </select>
+        </p>
+        <p>Upload screenshot of successful payment*: <br><input type="file" name="img" id="img" required></p>
+        <p><input type="button" value="Register!" onclick="functhree()"> <input type="reset" value="Reset"></p>
+        </div>
+        </div>
+    </form>
+    
+    <!-- javascript code -->
+    <script>
+        function funcOne(){
+            window.alert("You signed up at Quizz-Buzz! Now you can proceed to payment.")
+        }
+        function functwo(){
+            window.alert("Your payment is complete. Now you can register.")
+        }
+        function functhree(){
+            window.alert("Congratulations! You have registered for 2022-event. See you there!")
+        }
+    </script>
+</body>
+</html>
