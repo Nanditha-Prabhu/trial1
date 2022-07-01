@@ -1,0 +1,82 @@
+#head{
+    font-size: large;
+    text-align: center;
+    border: none;
+    padding: 5px 20px 15px 20px;
+    background-color: rgb(131, 222, 236);
+    border-radius: 25px;
+    box-sizing: content-box;
+    box-shadow: inset;
+    width: 97%;
+}
+#all{
+    background-color: lightgray;
+    border-radius: 25px;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    padding: 8px;
+    text-align: left;
+}
+#description{
+    background-color: rgb(194, 115, 194) ;
+    padding: 5px 20px 15px 20px;
+    border: none;
+    border-radius: 25px;
+    box-sizing: content-box;
+    text-align: center;
+    background-blend-mode: soft-light;
+}
+.signup{
+    background-color: rgb(216, 213, 151);
+    padding: 20px 40px 30px 40px;
+    border: none;
+    border-radius: 25px;
+    width: 95%;
+    background-blend-mode: hard-light;
+}
+.registration{
+    background-color: bisque;
+    padding: 20px 40px 30px 40px;
+    border: none;
+    border-radius: 25px;
+    width: 95%;
+    background-blend-mode: hard-light;
+}
+.payment{
+    background-color:lightblue;
+    padding: 20px 40px 30px 40px;
+    border: none;
+    border-radius: 25px;
+    width: 95%; /*this tells about width of border box*/
+    background-blend-mode: hard-light;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+    width: 30%;
+    padding: 10px; /*this gives space between the content and its border*/
+    border: 2px solid rgb(194, 115, 194);
+    border-radius: 15px;
+    margin: 10px;
+}
+input[type="button"],
+input[type="reset"]{
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(208, 191, 148);
+    cursor: pointer; /*this changes the type of cursor while hovering*/
+}
+input[type="reset"]:hover{
+    background-color:rgb(255, 255, 255);
+}
+input[type="button"]:hover{
+    background-color: rgb(255, 255, 255);
+}
